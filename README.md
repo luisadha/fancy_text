@@ -13,3 +13,18 @@ then 'your text' is the string that will be converted to fancytext
 and this function will return array
 
 open index.php you will know how to use it.
+
+
+Kamu juga bisa tambahkan fungsi bash ke file .bashrc anda
+Tambahkan kode ini:
+```
+fancytext () {                                                          #!/bin/bash                                                         
+
+homeDirectory=$(eval echo ~)                                          
+
+php -r "include('${homeDirectory}/wibi9424/fancy_text/fancytext.php'); echo fancytext($1, '$2')[1];"
+
+} ```
+
+
+
